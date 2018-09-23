@@ -19,10 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
     /* Will be called when button pressed */
     public void sendMessage(View view){
-        Intent intent = new Intent(this, DisplayMessageActivity.class);
-        EditText editText = (EditText) findViewById(R.id.editText);
-        String message = editText.getText().toString();
-        intent.putExtra(EXTRA_MESSAGE, message);
+        Intent intent = new Intent(this, activity_greeting.class);
         startActivity(intent);
     }
 }

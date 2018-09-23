@@ -71,3 +71,7 @@ task jacocoTestReport(type: JacocoReport, dependsOn: ['testDebugUnitTest', 'crea
             'jacoco/testDebugUnitTest.exec', 'outputs/code-coverage/connected/*coverage.ec'
     ])
 }
+
+dependencies {
+    implementation 'com.android.support.constraint:constraint-layout:+'
+}
